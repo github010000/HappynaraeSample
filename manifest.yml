@@ -1,0 +1,8 @@
+---
+applications:
+  - name: timeout-test
+    memory: 256M
+    instances: 1
+    host: timeout-test
+    buildpack: liberty-for-java
+    path: ./defaultServer
