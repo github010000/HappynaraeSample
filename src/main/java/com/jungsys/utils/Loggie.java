@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Loggie {
-    private static final Logger log = LoggerFactory.getLogger("Blue-Green");
+    private static final Logger log = LoggerFactory.getLogger("Timeout-Test");
 
     public static void debug(String msg) {
         log.debug(msg);
