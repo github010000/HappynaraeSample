@@ -16,8 +16,8 @@
         <feature>websocket-1.1</feature>
     </featureManager>
 
-    <application name='timeout-test' location='happynarae-sample-0.0.1-SNAPSHOT.war'
+    <application name='loopback-test' location='happynarae-sample-0.0.1-SNAPSHOT.war'
                  type='war' context-root='/' />
-    <webContainer   deferServletLoad="false" invokeFlushAfterService="false"/>
-    <cdi12  enableImplicitBeanArchives='false'/>
+	<webContainer deferServletLoad='false' />
+	<cdi12 enableImplicitBeanArchives='false' />
 </server>

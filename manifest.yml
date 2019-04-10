@@ -1,8 +1,15 @@
----
 applications:
-  - name: timeout-test
-    memory: 256M
-    instances: 1
-    host: timeout-test
-    buildpack: liberty-for-java
-    path: ./defaultServer
+- name: loopback-test
+  memory: 256M
+  instances: 1
+  host: loopback-test
+  buildpack: liberty-for-java
+  path: ./defaultServer
+  env:
+    JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{ enabled: false }'
+    JVM_ARGS: 
+      -Dfile.encoding=UTF-8
+      -Dfile.client.encoding=UTF-8
+      -Dclient.encoding.override=UTF-8
+      -Duser.timezone=Asia/Seoul
+      -Djava.security.egd=file:/dev/./urandom
